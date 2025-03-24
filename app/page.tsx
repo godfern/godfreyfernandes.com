@@ -5,15 +5,19 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
+import FeaturedSection from './featured/page';
+import WorkExperience from '../components/WorkExperience';
+import VerticalNav from '../components/VerticalNav';
 export default function Home() {
     return (
         <>
-            <Header />
+            <VerticalNav />
             <main>
                 <Hero />
-                <Projects />
                 <About />
+                <WorkExperience />
+                {/* <FeaturedSection /> */}
+                <Projects />
                 <Contact />
             </main>
             <Footer />

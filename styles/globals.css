@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#1B1E22] text-white;
+}
+
+.sunset-gradient {
+  background: linear-gradient(
+    to bottom,
+    #F15A29 0%,
+    #F29B50 30%,
+    #2F3A45 70%,
+    #1B1E22 100%
+  );
+}
+
