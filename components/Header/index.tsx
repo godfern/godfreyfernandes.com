@@ -19,6 +19,7 @@
 // export default Header;
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import MorphingLogo from '../MorphingLogo'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="px-4 py-3 flex items-center">
-        <h1 className="text-xl font-bold px-4 py-3 flex justify-start">Godfrey.dev</h1>
+      <div className=" px-4 py-3 flex items-center">
+        <h1 className="text-xl font-bold px-4 py-3 flex justify-start"><MorphingLogo /></h1>
         {/* <div className="text-xl font-bold text-primary">MyPortfolio</div> */}
 
         {/* Desktop Nav */}
@@ -42,7 +43,7 @@ const Header = () => {
 
         {/* Hamburger Icon */}
         <button
-          className="md:hidden text-accent focus:outline-none ml-auto"
+          className="lg:hidden text-accent focus:outline-none ml-auto"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -51,32 +52,31 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-50 flex flex-col bg-black transition-all duration-500 ease-out ${isOpen
-            ? 'opacity-100 translate-y-0 scale-100'
-            : 'opacity-0 -translate-y-4 scale-95 pointer-events-none'
+        className={`fixed inset-0 z-50 flex flex-col bg-white transition-all duration-300 ease-in-out ${isOpen
+          ? 'opacity-100 translate-y-0'
+          : 'opacity-0 -translate-y-full pointer-events-none'
           }`}
       >
-        <div className="flex justify-end p-4">
-          <h1 className="text-xl font-bold px-4 py-3 flex justify-start">Godfrey.dev</h1>
+        <div className="flex justify-end py-3 px-6">
           <button
-            className="text-accent focus:outline-none transition-transform hover:rotate-90 duration-300 text-accent focus:outline-none ml-auto"
+            className="text-accent focus:outline-none px-2"
             onClick={() => setIsOpen(false)}
           >
             <X size={24} />
           </button>
         </div>
-        <nav className="flex-1 flex flex-col items-center justify-center gap-6">
+        <div className="flex-1 flex flex-col items-center justify-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="text-2xl text-accent hover:text-primary transition-all duration-300 hover:scale-110"
+              className="text-2xl text-accent hover:text-primary transition"
               onClick={() => setIsOpen(false)}
             >
               {link}
             </a>
           ))}
-        </nav>
+        </div>
       </div>
     </header>
   );

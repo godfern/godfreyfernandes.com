@@ -16,3 +16,72 @@ body {
   );
 }
 
+/* @keyframes twinkle {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 5px #ffd700, 0 0 10px #ffcc00;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffd700;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 5px #ffd700, 0 0 10px #ffcc00;
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 1.5s infinite alternate ease-in-out;
+} */
+
+@keyframes twinkle {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 5px #ffd700, 0 0 10px #ffcc00;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffd700;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 5px #ffd700, 0 0 10px #ffcc00;
+  }
+}
+
+.before\:animate-twinkle::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  animation: twinkle 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 5px #ff0051, 0 0 10px #ffd700;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+  }
+}
+
+.glowing-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.glowing-icon:hover {
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+
