@@ -11,7 +11,7 @@ import VerticalNav from '../components/VerticalNav';
 export default function Home() {
     return (
         <>
-            <VerticalNav />
+            {/* <VerticalNav /> */}
             <main>
                 <Hero />
                 <About />
