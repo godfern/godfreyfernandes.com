@@ -169,7 +169,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative w-full min-h-screen bg-white overflow-hidden" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' }}>
+    <section id="home" className="relative w-full min-h-screen bg-white overflow-hidden pt-20" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' }}>
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
       <div className="relative flex flex-col text-center px-4 min-h-screen z-10">
         <Header />
