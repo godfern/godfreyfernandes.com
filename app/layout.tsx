@@ -10,6 +10,16 @@ export const metadata: Metadata = {
     title: 'godfern',
   },
   manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon1.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon0.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

@@ -19,6 +19,11 @@ module.exports = {
       //   },
       // },
       colors: {
+        'brand-aqua': '#3FB9C6',
+        'brand-navy': '#1D3557',
+        'brand-sand': '#F4D3A1',
+        'brand-coral': '#E67E22',
+        'brand-green': '#496D59',
         primary: {
           DEFAULT: '#F15A29',   // Sunset Orange
           dark: '#D74D21',

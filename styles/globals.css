@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#1B1E22] text-white;
+  @apply bg-white text-black;
 }
 
 .sunset-gradient {

@@ -29,7 +29,9 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50">
       <div className=" px-4 py-3 flex items-center">
-        <h1 className="text-xl font-bold px-4 py-3 flex justify-start"><MorphingLogo /></h1>
+        <img src="/logo.png" alt="Godfrey.dev" className="w-10 h-10" />
+        <h1 className="text-xl font px-4 py-3 flex justify-start">Godfrey Fernandes</h1>
+        {/* <h1 className="text-xl font-bold px-4 py-3 flex justify-start"><MorphingLogo /></h1> */}
         {/* <div className="text-xl font-bold text-primary">MyPortfolio</div> */}
 
         {/* Desktop Nav */}
