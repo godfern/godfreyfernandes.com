@@ -4,8 +4,8 @@ import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Godfrey Portfolio',
-  description: 'Frontend Developer Portfolio',
+  title: 'Godfrey Fernandes',
+  description: 'Godfrey Fernandes - Frontend Developer',
   appleWebApp: {
     title: 'godfern',
   },
