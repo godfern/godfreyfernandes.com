@@ -1,0 +1,27 @@
+.timelineItem {
+    position: relative;
+    padding-left: 3rem; /* Space for the marker */
+    margin-bottom: 2rem;
+}
+.timelineItem::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem; /* Position marker */
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #3FB9C6; /* brand-aqua marker */
+    border: 4px solid #F4D3A1; /* brand-sand ring */
+    box-shadow: 0 0 0 2px #3FB9C6;
+}
+/* Vertical line connecting timeline markers */
+.timelineItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 1.15rem; /* Center the line under the marker */
+    top: 2rem;
+    bottom: -2rem;
+    width: 2px;
+    background-color: #1D3557; /* brand-navy line */
+}

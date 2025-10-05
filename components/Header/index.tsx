@@ -1,12 +1,12 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { NAV_LINKS } from '../../lib/constants/app';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const navLinks = ['Home', 'About Me', 'Projects', 'Contact'];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,20 +20,20 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="px-6 md:px-12 lg:px-16 py-3 flex items-center justify-between mx-auto">
-        <div className="flex items-center">
+        <a href="#home" className="flex items-center cursor-pointer hover:opacity-80 transition-opacity">
           <img src="/logo.png" alt="Godfrey.dev" className="w-10 h-10" />
           <h1 className="text-xl font-semibold px-4">Godfrey Fernandes</h1>
-        </div>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-8 items-center">
-          {navLinks.map((link) => (
+          {Object.values(NAV_LINKS).map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.id}
+              href={link.href}
               className="text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </nav>
@@ -49,28 +49,21 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-50 flex flex-col bg-white transition-all duration-300 ease-in-out ${isOpen
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 -translate-y-full pointer-events-none'
+        className={`fixed top-[73px] left-0 right-0 bottom-0 z-40 flex flex-col transition-all duration-300 ease-in-out ${isOpen
+          ? 'opacity-100 visible'
+          : 'opacity-0 invisible'
           }`}
+        style={{ background: 'linear-gradient(to bottom right, #e0f2fe, #cffafe, #dbeafe)' }}
       >
-        <div className="flex justify-end py-3 px-6">
-          <button
-            className="text-gray-700 focus:outline-none px-2"
-            onClick={() => setIsOpen(false)}
-          >
-            <X size={24} />
-          </button>
-        </div>
-        <div className="flex-1 flex flex-col items-center justify-center gap-8">
-          {navLinks.map((link) => (
+        <div className="flex-1 flex flex-col items-center justify-center gap-8 py-8">
+          {Object.values(NAV_LINKS).map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.href}
+              href={link.href}
               className="text-3xl text-gray-700 hover:text-primary transition-colors duration-200 font-medium"
               onClick={() => setIsOpen(false)}
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>

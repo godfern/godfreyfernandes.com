@@ -1,0 +1,12 @@
+.skillBadge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.skillBadge:hover {
+  transform: translateY(-2px);
+}
