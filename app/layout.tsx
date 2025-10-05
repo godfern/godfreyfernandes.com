@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
       { url: '/icon1.png', type: 'image/png', sizes: '32x32' },
-      { url: '/icon0.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
     ],
     apple: [
       { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
@@ -25,9 +25,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="apple-mobile-web-app-title" content="godfern" />
-      </head>
       <body>{children}</body>
     </html>
   );
