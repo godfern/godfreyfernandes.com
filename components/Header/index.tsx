@@ -55,7 +55,7 @@ const Header = () => {
           }`}
         style={{ background: 'linear-gradient(to bottom right, #e0f2fe, #cffafe, #dbeafe)' }}
       >
-        <div className="flex-1 flex flex-col items-center justify-center gap-8 py-8">
+        <div className="flex-1 flex flex-col items-center justify-center gap-8 py-8" style={{ background: 'linear-gradient(to bottom right, #e0f2fe, #cffafe, #dbeafe)' }}>
           {Object.values(NAV_LINKS).map((link) => (
             <a
               key={link.href}
