@@ -17,7 +17,7 @@ const Projects = () => {
           {/* PROJECT CARD 1: Flipkart Seller Platform */}
           <div className="project-card bg-brand-navy/80 p-6 rounded-2xl border-t-4 border-brand-aqua shadow-2xl hover:scale-[1.02] transition duration-300">
             <span className="text-xs font-semibold uppercase tracking-wider text-brand-sand">Enterprise Scale</span>
-            <h4 className="text-3xl font-bold mt-2 mb-2 text-white">Flipkart Seller Platform</h4>
+            <h3 className="text-3xl font-bold mt-2 mb-2 text-white">Flipkart Seller Platform</h3>
             <p className="text-brand-aqua mb-4 font-mono text-sm">seller.flipkart.com</p>
             <p className="text-gray-300 mb-6">
               Key contributor to the mission-critical UI systems (Order & Payment Management) for one of India's largest e-commerce platforms, focusing on performance, state management, and scalability using React/GraphQL.
@@ -31,7 +31,7 @@ const Projects = () => {
           {/* PROJECT CARD 2: St. Rita Chapel (Community) */}
           <div className="project-card bg-brand-navy/80 p-6 rounded-2xl border-t-4 border-brand-sand shadow-2xl hover:scale-[1.02] transition duration-300">
             <span className="text-xs font-semibold uppercase tracking-wider text-brand-coral">Goan Community Project</span>
-            <h4 className="text-3xl font-bold mt-2 mb-2 text-white">St. Rita Chapel Carona</h4>
+            <h3 className="text-3xl font-bold mt-2 mb-2 text-white">St. Rita Chapel Carona</h3>
             <p className="text-brand-sand mb-4 font-mono text-sm">stritachapelcarona.in</p>
             <p className="text-gray-300 mb-6">
               Designed and developed a responsive community website for the local chapel. Focused on showcasing details about the history of the chapel, activities, clear information about the chapel.
@@ -45,7 +45,7 @@ const Projects = () => {
           {/* PROJECT CARD 3: Auxilium Carona (Community) */}
           <div className="project-card bg-brand-navy/80 p-6 rounded-2xl border-t-4 border-brand-coral shadow-2xl hover:scale-[1.02] transition duration-300">
             <span className="text-xs font-semibold uppercase tracking-wider text-brand-aqua">Educational Outreach</span>
-            <h4 className="text-3xl font-bold mt-2 mb-2 text-white">Auxilium Carona</h4>
+            <h3 className="text-3xl font-bold mt-2 mb-2 text-white">Auxilium Carona</h3>
             <p className="text-brand-coral mb-4 font-mono text-sm">auxiliumcarona.org</p>
             <p className="text-gray-300 mb-6">
               Developed the platform for a local educational organization. Emphasis was placed on accessibility, clear information about the educational organization.

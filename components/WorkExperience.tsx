@@ -18,7 +18,7 @@ const WorkExperience = () => {
           {WORK_EXPERIENCE[PAGE_IDS.WORK_EXPERIENCE].jobs.map((job, index) => (
             <div className={styles.timelineItem} key={index}>
               <p className="text-sm font-semibold text-brand-coral">{job.date}</p>
-              <h4 className="text-2xl font-bold text-brand-navy mt-1">{job.title}</h4>
+              <h3 className="text-2xl font-bold text-brand-navy mt-1">{job.title}</h3>
               <p className="text-lg text-gray-700">{job.company}</p>
               <p className="list-disc list-inside text-gray-600 mt-2 space-y-1 pl-4">{job.description}</p>
             </div>
