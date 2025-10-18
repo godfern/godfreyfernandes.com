@@ -18,9 +18,9 @@ const Skills = () => {
 
 
                     <div className="bg-brand-navy/80 p-6 rounded-xl border border-brand-aqua/50 shadow-lg">
-                        <h4 className="text-2xl font-bold mb-4 text-brand-sand">
+                        <h3 className="text-2xl font-bold mb-4 text-brand-sand">
                             Frontend & UI
-                        </h4>
+                        </h3>
                         <div className="flex flex-wrap gap-2">
                             <span className={`${styles.skillBadge} bg-brand-aqua text-brand-navy`}>{SKILLS[PAGE_IDS.SKILLS].frontend[0]}</span>
                             <span className={`${styles.skillBadge} bg-brand-aqua text-brand-navy`}>{SKILLS[PAGE_IDS.SKILLS].frontend[1]}</span>
