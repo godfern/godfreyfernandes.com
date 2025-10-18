@@ -9,9 +9,9 @@ const Skills = () => {
         <section id={PAGE_IDS.SKILLS} className="py-20 px-4 bg-brand-navy text-white">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-center mb-12">
-                    <h3 className="text-4xl font-extrabold text-center mb-12 text-brand-aqua border-b-4 border-brand-sand inline-block pb-1">
+                    <h2 className="text-4xl font-extrabold text-center mb-12 text-brand-aqua border-b-4 border-brand-sand inline-block pb-1">
                         Technical Skills
-                    </h3>
+                    </h2>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">

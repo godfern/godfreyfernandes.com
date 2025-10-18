@@ -9,9 +9,9 @@ const WorkExperience = () => {
     <section id={PAGE_IDS.WORK_EXPERIENCE} className="py-20 px-4 bg-fcfcfc">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-center mb-12">
-          <h3 className="text-4xl font-extrabold text-center mb-16 text-brand-navy border-b-4 border-brand-coral inline-block pb-1">
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-brand-navy border-b-4 border-brand-coral inline-block pb-1">
             Work Experience
-          </h3>
+          </h2>
         </div>
 
         <div className="space-y-12">

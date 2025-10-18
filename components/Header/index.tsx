@@ -21,7 +21,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="px-6 md:px-12 lg:px-16 py-3 flex items-center justify-between mx-auto">
         <a href="#home" className="flex items-center cursor-pointer hover:opacity-80 transition-opacity">
-          <img src="/logo.png" alt="Godfrey.dev" className="w-10 h-10" />
+          <img src="/logo.webp" alt="Godfrey.dev" className="w-10 h-10" />
           <h1 className="text-xl font-semibold px-4">Godfrey Fernandes</h1>
         </a>
 
@@ -42,6 +42,7 @@ const Header = () => {
         <button
           className="lg:hidden text-gray-700 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
